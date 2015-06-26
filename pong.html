@@ -222,10 +222,18 @@ var score = 0,
             } else {
                 myPong.xmov = -1;
             }
-            if (myPong.ymov) {
-                myPong.xmov *= -((mySprite.x - myPong.x) / 10);
-            } else {
-                myPong.xmov *= -((oppSprite.x - myPong.x) / 10);
+            if (myPong.intersects(mySprite)) {
+                myPong.xmov += -((myPong.x - mySprite.x) / 100);
+                mySprite.color = '#fff';
+                setTimeout((function(){
+                    mySprite.color = '#c00';
+                }),1000);
+            } else if( myPong.intersects(oppSprite)){
+                oppSprite.color = '#fff';
+                myPong.xmov += -((myPong.x - oppSprite.x) / 100);
+                setTimeout((function(){
+                    oppSprite.color = '#c00';
+                }),1000);
             }
             myPong.ymov *= -1;
         }
