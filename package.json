@@ -1,0 +1,29 @@
+{
+  "name": "mumtiplayer-pong",
+  "version": "1.0.0",
+  "description": "Multiplayer pong game using express.io ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahulsend89/MultiPlayer-Pong.git"
+  },
+  "keywords": [
+    "Multiplayer",
+    "Pong"
+  ],
+  "author": "Rahul Malik <rahul.send89@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rahulsend89/MultiPlayer-Pong/issues"
+  },
+  "homepage": "https://github.com/rahulsend89/MultiPlayer-Pong#readme",
+  "devDependencies": {
+    "coffee-script": "^1.6.3",
+    "connect": "^3.4.1",
+    "express.io": "1.1.13"
+  }
+}
